@@ -1,21 +1,65 @@
-MIT License
+# Devkit CLI
 
-Copyright (c) [year] [fullname]
+Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Installation
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Install DevKit CLI globally using [npm](https://www.npmjs.com/package/devkit-js).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+```bash
+npm install -g devkit-js
+```
+
+## Creating a new project
+
+In the terminal run
+
+```bash
+devkit create <your new project name>
+```
+
+This will create the project folder in your current working directory and take care of installing all the necessary dependencies.
+
+The created project will have the following folder structure:
+
+```bash
+├── ...
+├── client
+│   ├── src                 # src directory, where your client stuff go
+│   │   ├── scripts         # JS components and main app.js
+│   │   ├── styles          # SCSS components and main main.scss
+│   │   ├── views           # index.html & other pages
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+├── LICENSE
+├── README.md
+```
+
+Once the project is created navigate to the project directory and start building your new app. A Dev Server comes out of the box. In order to start the client side dev server run:
+
+```bash
+npm run dev:client
+```
+
+When ready to deploy/build the client side for production and generate the distribution files, run in the terminal:
+
+```bash
+npm run build
+```
+
+This will automatically generate all the distribution files and put them in the auto-generated `public` directory.
+
+The `.scss` files will be compiled into `.css` and minified. The `.js` files will be transpiled using [babel](https://babeljs.io/). All the styles and scripts will be automatically injected into your `index.html`.
+
+## Contributing
+
+If you find any issue, feel free to submit a pull request
+
+## Author
+
+[iClusterDev](https://github.com/iClusterDev)
+
+## License
+
+[MIT](https://github.com/iClusterDev/JS-Devkit-CLI/blob/main/LICENSE)
