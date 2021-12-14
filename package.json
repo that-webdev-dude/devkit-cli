@@ -1,0 +1,26 @@
+{
+  "name": "@that-webdev-dude/devkit-cli",
+  "version": "1.0.0",
+  "description": "Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "devkit": "bin/devkit.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vanilla",
+    "javascript",
+    "devkit-cli",
+    "devkit",
+    "cli"
+  ],
+  "author": "that-webdev-dude",
+  "license": "MIT",
+  "repository": "git://github.com/that-webdev-dude/devkit-cli.git"
+}
