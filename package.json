@@ -1,6 +1,6 @@
 {
   "name": "@that-webdev-dude/devkit-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.",
   "main": "index.js",
   "preferGlobal": true,
@@ -25,7 +25,7 @@
   "repository": "git://github.com/that-webdev-dude/devkit-cli.git",
   "dependencies": {
     "commander": "^8.3.0",
-    "fse": "^4.0.1",
+    "fs-extra": "^10.0.0",
     "replace-in-file": "^6.3.2"
   }
 }
