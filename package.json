@@ -24,6 +24,8 @@
   "license": "MIT",
   "repository": "git://github.com/that-webdev-dude/devkit-cli.git",
   "dependencies": {
-    "commander": "^8.3.0"
+    "commander": "^8.3.0",
+    "fse": "^4.0.1",
+    "replace-in-file": "^6.3.2"
   }
 }
