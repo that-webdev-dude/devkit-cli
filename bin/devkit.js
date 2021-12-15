@@ -69,12 +69,11 @@ program
   .description('create project')
   .action(async (projectName) => {
     try {
-      // await create(projectName);
+      await create(projectName);
       // notify.success(`project ${projectName} created successfully!\n`);
       // notify.info(`navigate to ${projectName}/client`);
       // notify.info(`start the dev server: npm run dev:client`);
       // notify.info(`build for deployment: npm run build`);
-      console.log('all good!');
     } catch (error) {
       // notify.failure(error.message);
       console.log(error);
