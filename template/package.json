@@ -1,5 +1,5 @@
 {
-  "name": "bundler-webpack",
+  "name": "--project-name--",
   "version": "1.0.1",
   "description": "Webpack configuration files for dev & producion environments",
   "scripts": {

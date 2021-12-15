@@ -1,13 +1,13 @@
 module.exports = {
-  name: 'myProject',
+  name: '--project-name--',
   pages: [
     {
-      title: 'index',
+      title: '--project-name--',
       filename: 'index.html',
       template: './src/views/index.html',
     },
     {
-      title: 'about',
+      title: '--project-name--',
       filename: 'about.html',
       template: './src/views/about.html',
     },
