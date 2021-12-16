@@ -4,6 +4,7 @@
   "description": "Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.",
   "main": "index.js",
   "preferGlobal": true,
+  "type": "module",
   "bin": {
     "devkit": "bin/devkit.js"
   },
@@ -24,8 +25,10 @@
   "license": "MIT",
   "repository": "git://github.com/that-webdev-dude/devkit-cli.git",
   "dependencies": {
+    "chalk": "^5.0.0",
     "commander": "^8.3.0",
     "fs-extra": "^10.0.0",
+    "ora": "^6.0.1",
     "replace-in-file": "^6.3.2"
   }
 }
