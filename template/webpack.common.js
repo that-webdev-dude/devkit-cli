@@ -5,7 +5,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 const { pages } = require('./project.config');
 
 module.exports = {
-  entry: { main: './src/main.js' },
+  entry: { main: './main.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: devMode ? '[name].js' : '[name].[contenthash].js',

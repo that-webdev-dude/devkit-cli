@@ -1,4 +1,4 @@
-import logoImageSrc from '../images/logo.png';
+import logoImageSrc from './images/logo.png';
 
 export default () => {
   // logo image element creation
