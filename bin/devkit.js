@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import program from 'commander';
+import { notify } from '../lib/Notify.js';
 import { create } from '../lib/index.js';
 import { readFile } from 'fs/promises';
 
@@ -16,12 +17,12 @@ program
   .action(async (projectName) => {
     try {
       await create(projectName);
-      // notify.success(`project ${projectName} created successfully!\n`);
-      // notify.info(`navigate to ${projectName}/client`);
-      // notify.info(`start the dev server: npm run dev:client`);
-      // notify.info(`build for deployment: npm run build`);
+      notify.success(`project ${projectName} created successfully!\n`);
+      notify.info(`navigate to ${projectName}`);
+      notify.info(`start the dev server: npm run start`);
+      notify.info(`build for deployment: npm run build`);
     } catch (error) {
-      // notify.failure(error.message);
+      notify.failure(error.message);
     }
   });
 
