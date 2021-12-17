@@ -26,9 +26,12 @@
   "repository": "git://github.com/that-webdev-dude/devkit-cli.git",
   "dependencies": {
     "chalk": "^5.0.0",
+    "clear": "^0.1.0",
     "commander": "^8.3.0",
+    "figlet": "^1.5.2",
     "fs-extra": "^10.0.0",
     "ora": "^6.0.1",
-    "replace-in-file": "^6.3.2"
+    "replace-in-file": "^6.3.2",
+    "typeis.js": "^1.0.18"
   }
 }
