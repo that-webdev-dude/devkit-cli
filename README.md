@@ -1,17 +1,13 @@
 # Devkit CLI - v1.1.4
 
-<!-- <p align="center">
-  <img src="logo.png" />
-</p> -->
-
 Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.
 
 ## Installation
 
-Install DevKit CLI globally using [npm](https://www.npmjs.com/package/devkit-js).
+Install DevKit CLI (GitHub Package) globally using [npm](https://github.com/that-webdev-dude/devkit-cli/packages/1149378).
 
 ```bash
-npm install -g devkit-js
+npm install @that-webdev-dude/devkit-cli
 ```
 
 ## Creating a new project
@@ -22,9 +18,9 @@ In the terminal run
 devkit create <your new project name>
 ```
 
-This will create the project folder in your current working directory and take care of installing all the necessary dependencies.
+This will create the project folder in your current working directory and take care all the necessary dependencies.
 
-The project will have the following folder structure:
+The project folder will have the following structure:
 
 ```bash
 ├── ...
@@ -33,6 +29,7 @@ The project will have the following folder structure:
 │   ├── styles          # SCSS components and main.scss
 │   ├── views           # index.html & other pages
 │   ├── app.js          # your app.js file
+├── main.js             # webpack bundler entry
 ├── .gitignore
 ├── package.json
 ├── LICENSE
@@ -40,7 +37,26 @@ The project will have the following folder structure:
 ├── ...
 ```
 
-Once the project is created navigate to the project directory and start building your new app. A Dev Server comes out of the box. In order to start the client side dev server run:
+If building a multi-page static website, you will need to add the .html pages in the project.config.js:
+
+```js
+module.exports = {
+  name: '--project-name--',
+  pages: [
+    // if making a multipage
+    // static site, add your pages here
+    {
+      title: 'index',
+      filename: 'index.html',
+      template: './src/views/index.html',
+    },
+  ],
+};
+```
+
+## Running the Dev Server and/or Building for production
+
+Once the project is created, navigate to the project directory and start building your new app. A Dev Server comes out of the box. In order to start the client side dev server run:
 
 ```bash
 npm start
@@ -67,4 +83,4 @@ If you find any issue, feel free to submit a pull request
 
 ## License
 
-[MIT](https://github.com/iClusterDev/JS-Devkit-CLI/blob/main/LICENSE)
+[MIT](https://github.com/that-webdev-dude/devkit-cli/blob/main/LICENSE)
