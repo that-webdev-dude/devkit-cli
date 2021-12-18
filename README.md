@@ -1,4 +1,4 @@
-# Devkit CLI - v1.1.4
+# Devkit CLI - v1.1.7
 
 Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.
 
