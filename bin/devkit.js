@@ -16,13 +16,11 @@ program
   .description('create project')
   .action(async (projectName) => {
     try {
-      console.log('DEBUG ~ test', 'test');
-
-      // await create(projectName);
-      // notify.success(`project ${projectName} created successfully!\n`);
-      // notify.info(`navigate to ${projectName}`);
-      // notify.info(`start the dev server: npm run start`);
-      // notify.info(`build for deployment: npm run build`);
+      await create(projectName);
+      notify.success(`project ${projectName} created successfully!\n`);
+      notify.info(`navigate to ${projectName}`);
+      notify.info(`start the dev server: npm run start`);
+      notify.info(`build for deployment: npm run build`);
     } catch (error) {
       notify.failure(error.message);
     }
