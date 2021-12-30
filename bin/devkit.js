@@ -14,11 +14,6 @@ const { prompt } = pkg;
 class Config {
   static setup = (projectName) => {
     const questions = [
-      // {
-      //   type: 'confirm',
-      //   name: 'serverPlugin',
-      //   message: `Will you use a server for ${projectName}?`,
-      // },
       {
         type: 'list',
         name: 'workflow',
