@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - [typescript](https://www.typescriptlang.org/) support
 
-### Changed
+## [1.1.9] - 2021-12-30
 
 ### Fixed
+
+- gitignore file to be properly copied across
+- assigned .md to CHANGELOG file
