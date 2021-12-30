@@ -6,11 +6,13 @@ const { pages } = require('./project.config');
 
 module.exports = {
   entry: { main: './main.js' },
+
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: devMode ? '[name].js' : '[name].[contenthash].js',
     clean: true,
   },
+
   plugins: pages
     .map((page) => {
       return new HtmlWebpackPlugin({ ...page });
@@ -24,8 +26,20 @@ module.exports = {
             }),
           ]
     ),
+
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        include: [path.resolve(__dirname, 'src')],
+        exclude: /node_modules/,
+      },
+
       {
         test: /\.(sa|sc|c)ss$/i,
         use: [
