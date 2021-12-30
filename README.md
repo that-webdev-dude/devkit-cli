@@ -25,6 +25,8 @@ The project folder will have the following structure:
 ```bash
 ├── ...
 ├── src                 # src directory, where your dev stuff go
+│   ├── fonts           # JS components and other scripts
+│   ├── images          # JS components and other scripts
 │   ├── scripts         # JS components and other scripts
 │   ├── styles          # SCSS components and main.scss
 │   ├── views           # index.html & other pages
@@ -62,6 +64,7 @@ Once the project is created, navigate to the project directory and start buildin
 npm start
 ```
 
+It is a best practice to put all your stuff in the `src` directory. Here you can choose to structure your workflow using `TypeScript` or plain `JavaScript`.
 When ready to deploy/build for production, run in the terminal:
 
 ```bash
@@ -70,7 +73,7 @@ npm run build
 
 This will automatically generate all the distribution files and put them in the auto-generated `dist` directory.
 
-The `.scss` files will be compiled into `.css` and minified. The `.js` files will be transpiled.
+The `.scss` files will be compiled into `.css` and minified. The `.ts` files will be compiled to plain JavaScript, and the `.js` files will be transpiled.
 All the styles and scripts will be automatically injected into your `index.html`.
 
 ## Contributing
