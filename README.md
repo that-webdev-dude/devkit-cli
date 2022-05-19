@@ -1,4 +1,4 @@
-# Devkit CLI - v1.1.7
+# Devkit CLI - v1.1.10
 
 Devkit CLI is a Command Line tool for superfast scaffolding of any simple Vanilla JavaScript App.
 
@@ -43,14 +43,14 @@ If building a multi-page static website, you will need to add the .html pages in
 
 ```js
 module.exports = {
-  name: '--project-name--',
+  name: "--project-name--",
   pages: [
     // if making a multipage
     // static site, add your pages here
     {
-      title: 'index',
-      filename: 'index.html',
-      template: './src/views/index.html',
+      title: "index",
+      filename: "index.html",
+      template: "./src/views/index.html",
     },
   ],
 };

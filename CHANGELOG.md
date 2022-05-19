@@ -17,3 +17,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - gitignore file to be properly copied across
 - assigned .md to CHANGELOG file
+
+## [1.1.10] - 2021-12-30
+
+### Fixed
+
+- doc the class files
