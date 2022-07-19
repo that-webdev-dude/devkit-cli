@@ -30,7 +30,7 @@ The project folder will have the following structure:
 │   ├── scripts         # JS components and other scripts
 │   ├── styles          # SCSS components and main.scss
 │   ├── views           # index.html & other pages
-│   ├── app.js          # your app.js file
+│   ├── app.ts          # your app.js file
 ├── main.js             # webpack bundler entry
 ├── .gitignore
 ├── package.json
